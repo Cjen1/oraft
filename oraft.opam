@@ -14,6 +14,16 @@ build: [ "dune" "build" "-j" jobs "-p" name "@install" ]
 depends: [
   "dune" {build & >= "1.3.0"}
   "batteries" {>= "2.8.0"}
+  "base64" {< "3.0.0"}
+  "cmdliner"
+  "extprot"
+  "fmt"
+  "logs"
+  "lwt"
+  "lwt_ppx"
+  "tls"
+  "x509"
+  "extprot"
 ]
 synopsis: "Implementation of Raft consensus algorithm"
 description: """
